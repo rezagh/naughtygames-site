@@ -27,14 +27,14 @@
   <div class="container">
     <a href="/" class="back">&larr; Back</a>
     <h1>Privacy Policy</h1>
-    <p class="date">Last updated: April 3, 2026</p>
+    <p class="date">Last updated: November 8, 2026</p>
 
     <div class="highlight">
       <h2>Key Privacy Points</h2>
       <ul>
         <li>&#10003; No account or login required to use the app</li>
         <li>&#10003; All game data is stored locally on your device</li>
-        <li>&#10003; We do not collect personal information</li>
+        <li>&#10003; Player names and game activity stay on your device</li>
         <li>&#10003; We never sell your data</li>
       </ul>
     </div>
@@ -56,12 +56,13 @@
       <h3 style="font-size:18px; margin: 16px 0 8px;">2.2 Information We Collect Automatically</h3>
       <ul>
         <li><strong>Game Content Sync:</strong> The app fetches game content (prompts, dice faces) from our server. We log standard server access information (IP address, timestamp) but do not associate this with any personal identity</li>
+        <li><strong>Optional Push Notifications:</strong> If you grant notification permission, the app obtains an Expo push token and sends it with your device platform (Android or iOS) to our server. We store the token, platform, and registration/update timestamps to deliver content-update notifications. These tokens identify an app installation for notification delivery; we do not associate them with your player names or game activity.</li>
       </ul>
 
       <h3 style="font-size:18px; margin: 16px 0 8px;">2.3 Information We Do NOT Collect</h3>
       <ul>
         <li>We do NOT require account creation or login</li>
-        <li>We do NOT collect names, email addresses, or personal identifiers</li>
+        <li>We do NOT collect your player names or require an email address to use the app</li>
         <li>We do NOT track your location</li>
         <li>We do NOT use analytics or advertising SDKs</li>
         <li>We do NOT read or transmit your game activity to our servers</li>
@@ -75,12 +76,12 @@
 
     <section>
       <h2>4. Data Storage</h2>
-      <p>All personal data (player names, game progress, preferences) is stored locally on your device using SQLite. This data never leaves your device. If you uninstall the app, this data is permanently deleted.</p>
+      <p>Player names, game progress, and preferences are stored locally using SQLite and the operating system’s secure storage. They are not sent to our server. Device backups or secure storage may preserve or restore some settings, including after reinstalling the app. Push registration data is stored on our server, separately from your local game data. Push tokens are removed when notification delivery reports that they are no longer registered.</p>
     </section>
 
     <section>
       <h2>5. Data Sharing</h2>
-      <p>We do not share, sell, or transfer any personal information to third parties. The only network communication is fetching game content from our server, which does not include any personal data.</p>
+      <p>We do not sell your data. The app contacts our server for game content and, if notification permission is granted, push registration. To send notifications, we provide push tokens and notification messages to Expo’s notification service, which routes delivery through Apple Push Notification service or Firebase Cloud Messaging. Purchases communicate with your app store. Player names and game activity are not included in these communications.</p>
     </section>
 
     <section>
@@ -90,7 +91,7 @@
 
     <section>
       <h2>7. Your Rights</h2>
-      <p>Since we do not collect personal data on our servers, there is no personal data for us to access, correct, or delete. All your data is on your device and under your control. You can clear it by uninstalling the app.</p>
+      <p>You can disable notifications in your device settings at any time. Local game data is under your device’s storage and backup controls. For questions or requests concerning server-held push registration data or access logs, contact us using the address below. We do not hold player names or gameplay history on our server.</p>
     </section>
 
     <section>
